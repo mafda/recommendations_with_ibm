@@ -30,9 +30,10 @@ experience and increase engagement with the platform.
     (base)$: conda activate recommendations_ibm
     ```
 
-- Download the dataset from [this link](),
-  create `data` folder and copy the `articles_community.csv` and `user-item-interactions.csv` datasets
-  here.
+- Download the dataset from [this
+  link](https://drive.google.com/drive/folders/15nFBCV2GE0UQobtuG2enFlVDhu9Bhno6?usp=share_link),
+  create `data` folder and copy the `articles_community.csv` and
+  `user-item-interactions.csv` datasets here.
 
     ```shell
     (recommendations_ibm)$: mkdir data
