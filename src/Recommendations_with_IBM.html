@@ -7500,7 +7500,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [140]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
@@ -7520,7 +7520,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [141]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/user-item-interactions.csv'</span><span class="p">)</span>
@@ -7948,7 +7948,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [161]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_articles</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
@@ -8062,7 +8062,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [164]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># create the user-article matrix with 1's and 0's</span>
@@ -8127,7 +8127,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [92]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [166]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">find_similar_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -8209,7 +8209,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [168]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_article_names</span><span class="p">(</span><span class="n">article_ids</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
@@ -8383,7 +8383,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [268]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -8428,6 +8428,56 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
     <span class="k">return</span> <span class="n">neighbors_df</span>
 
 
+<span class="c1"># def user_user_recs_part2(user_id, m=10):</span>
+<span class="c1">#     """</span>
+<span class="c1">#     INPUT:</span>
+<span class="c1">#     user_id - (int) a user id</span>
+<span class="c1">#     m - (int) the number of recommendations you want for the user</span>
+    
+<span class="c1">#     OUTPUT:</span>
+<span class="c1">#     recs - (list) a list of recommendations for the user by article id</span>
+<span class="c1">#     rec_names - (list) a list of recommendations for the user by article title</span>
+    
+<span class="c1">#     Description:</span>
+<span class="c1">#     Loops through users based on similarity to the input user_id.</span>
+<span class="c1">#     For each similar user, finds articles the input user hasn't seen and recommends them.</span>
+<span class="c1">#     Continues until m recommendations are found or all similar users are exhausted.</span>
+    
+<span class="c1">#     Notes:</span>
+<span class="c1">#     * Prioritizes users with the most total article interactions before others.</span>
+<span class="c1">#     * Also prioritizes articles with the most total interactions before others.</span>
+<span class="c1">#     """</span>
+
+<span class="c1">#     user_article_ids, _ = get_user_articles(user_id)</span>
+
+<span class="c1">#     # Get similar users (neighbors) sorted by similarity</span>
+<span class="c1">#     neighbors = get_top_sorted_users(user_id).neighbor_id.values</span>
+    
+<span class="c1">#     # Initialize an empty set for recommendations to avoid duplicates</span>
+<span class="c1">#     recs_set = set()</span>
+    
+<span class="c1">#     # Iterate over similar users and gather recommendations</span>
+<span class="c1">#     for neighbor_id in neighbors:</span>
+<span class="c1">#         neighbor_article_ids, _ = get_user_articles(neighbor_id)</span>
+        
+<span class="c1">#         # Find articles the neighbor has seen that the user hasn't</span>
+<span class="c1">#         new_recs = set(neighbor_article_ids) - set(user_article_ids)</span>
+
+<span class="c1">#         # Add new recommendations to the set</span>
+<span class="c1">#         recs_set.update(new_recs)</span>
+
+<span class="c1">#         # Stop when we have enough recommendations</span>
+<span class="c1">#         if len(recs_set) &gt;= m:</span>
+<span class="c1">#             break</span>
+    
+<span class="c1">#     # Convert recommendations to a list and limit to top m</span>
+<span class="c1">#     recs = list(recs_set)[:m]</span>
+    
+<span class="c1">#     # Get article names corresponding to the recommended article IDs</span>
+<span class="c1">#     rec_names = get_article_names(recs)</span>
+
+<span class="c1">#     return recs, rec_names</span>
+
 <span class="k">def</span> <span class="nf">user_user_recs_part2</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    INPUT:</span>
@@ -8448,10 +8498,19 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <span class="sd">    * Also prioritizes articles with the most total interactions before others.</span>
 <span class="sd">    """</span>
 
-    <span class="n">user_article_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+    <span class="c1"># Get the list of articles the input user has already seen</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">user_article_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>  <span class="c1"># If the user does not exist, recommend top m articles by popularity</span>
+        <span class="n">recs</span> <span class="o">=</span> <span class="n">get_top_article_ids</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">recs</span><span class="p">,</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">recs</span><span class="p">)</span>
 
     <span class="c1"># Get similar users (neighbors) sorted by similarity</span>
-    <span class="n">neighbors</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="p">)</span>
+    <span class="n">neighbors</span> <span class="o">=</span> <span class="n">neighbors_df</span><span class="p">[</span><span class="s1">'neighbor_id'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+
+    <span class="c1"># Get the popularity of all articles by counting their total interactions</span>
+    <span class="n">article_interactions</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'article_id'</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">'user_id'</span><span class="p">]</span>
     
     <span class="c1"># Initialize an empty set for recommendations to avoid duplicates</span>
     <span class="n">recs_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
@@ -8462,9 +8521,13 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
         
         <span class="c1"># Find articles the neighbor has seen that the user hasn't</span>
         <span class="n">new_recs</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">neighbor_article_ids</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">user_article_ids</span><span class="p">)</span>
-        
+        <span class="n">items_float</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="n">new_recs</span><span class="p">))</span>
+
+        <span class="c1"># Sorting recommendations based on article popularity/interaction count</span>
+        <span class="n">recs_to_add</span> <span class="o">=</span> <span class="n">article_interactions</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">items_float</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+          
         <span class="c1"># Add new recommendations to the set</span>
-        <span class="n">recs_set</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">new_recs</span><span class="p">)</span>
+        <span class="n">recs_set</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">recs_to_add</span><span class="p">)</span>
 
         <span class="c1"># Stop when we have enough recommendations</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recs_set</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">m</span><span class="p">:</span>
@@ -8487,10 +8550,24 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [269]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8511,6 +8588,26 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"The top 10 recommendations for user 20 are the following article names:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">rec_names</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1330.0</span><span class="p">,</span> <span class="mf">1427.0</span><span class="p">,</span> <span class="mf">1364.0</span><span class="p">,</span> <span class="mf">1170.0</span><span class="p">,</span> <span class="mf">1162.0</span><span class="p">,</span> <span class="mf">1304.0</span><span class="p">,</span> <span class="mf">1351.0</span><span class="p">,</span> <span class="mf">1160.0</span><span class="p">,</span> <span class="mf">1354.0</span><span class="p">,</span> <span class="mf">1368.0</span><span class="p">]</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1411.0</span><span class="p">,</span> <span class="mf">1160.0</span><span class="p">,</span> <span class="mf">1410.0</span><span class="p">,</span> <span class="mf">1357.0</span><span class="p">,</span> <span class="mf">1338.0</span><span class="p">,</span> <span class="mf">1172.0</span><span class="p">,</span> <span class="mf">1354.0</span><span class="p">,</span> <span class="mf">555.0</span><span class="p">,</span> <span class="mf">1024.0</span><span class="p">,</span> <span class="mf">1409.0</span><span class="p">]</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1024.0</span><span class="p">,</span> <span class="mf">1409.0</span><span class="p">,</span> <span class="mf">1410.0</span><span class="p">,</span> <span class="mf">1411.0</span><span class="p">,</span> <span class="mf">1152.0</span><span class="p">,</span> <span class="mf">1157.0</span><span class="p">,</span> <span class="mf">1154.0</span><span class="p">,</span> <span class="mf">1153.0</span><span class="p">,</span> <span class="mf">1160.0</span><span class="p">,</span> <span class="mf">1162.0</span><span class="p">]</span>
+
+<span class="n">c</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="n">c</span>
 </pre></div>
 </div>
 </div>
@@ -8560,7 +8657,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [274]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">### Tests with a dictionary of results</span>
@@ -8631,7 +8728,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">new_user</span> <span class="o">=</span> <span class="s1">'0.0'</span>
@@ -8681,7 +8778,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_content_recs</span><span class="p">():</span>
@@ -8736,7 +8833,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># make recommendations for a brand new user</span>
@@ -8765,7 +8862,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load the matrix here</span>
@@ -8806,7 +8903,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Perform SVD on the User-Item Matrix Here</span>
@@ -8909,7 +9006,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_train</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">40000</span><span class="p">)</span>
@@ -9056,7 +9153,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># fit SVD on the user_item_train matrix</span>
@@ -9092,7 +9189,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Estimate ratings</span>
@@ -9156,7 +9253,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Initialize lists to store errors</span>
